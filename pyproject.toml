@@ -1,0 +1,26 @@
+[project]
+name = "gan-quickdraw"
+version = "1.0.0"
+description = "GAN (DCGAN) que aprende a dibujar una categoría del dataset Quick, Draw! de Google"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.2",
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+    "pillow>=10.0",
+]
+
+# ---------------------------------------------------------------------------
+# OPCIONAL: usar la GPU NVIDIA (RTX) en vez de la CPU.
+# Quita los "#" de las 6 líneas de abajo y corre "uv sync" de nuevo.
+# Revisa en https://pytorch.org/get-started/locally/ cuál es la versión CUDA
+# vigente (cu126, cu128...) y cámbiala en las dos partes si hace falta.
+# ---------------------------------------------------------------------------
+# [tool.uv.sources]
+# torch = [{ index = "pytorch-cuda" }]
+#
+# [[tool.uv.index]]
+# name = "pytorch-cuda"
+# url = "https://download.pytorch.org/whl/cu126"
+# explicit = true
